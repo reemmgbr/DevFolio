@@ -1,0 +1,104 @@
+:root {
+  --background-color: #0078ff;
+}
+ul {
+  list-style-type: none;
+} /* start landing-page */
+.landing-page {
+  background-image: linear-gradient(#4c9df2, #4b9bf09c),
+    url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+}
+/* end landing page   */
+/* start blog-single */
+.blog-single h5 {
+  position: relative;
+}
+.blog-single h5::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  height: 100%;
+  width: 5px;
+
+  left: -15px;
+}
+.ul-recnt a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.ul-recnt a::before {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  width: 10px;
+  height: 1px;
+  left: -20px;
+  top: 10px;
+}
+.icon-link {
+  position: relative;
+}
+.icon-link::before {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  height: 25px;
+  width: 5px;
+}
+.p-italic {
+  font-size: 20px;
+  color: #4e4e4e;
+  width: 85%;
+  position: relative;
+  padding-left: 20px;
+}
+.p-italic::before {
+  content: "";
+  background-color: var(--background-color);
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 2px;
+}
+.h4-underine {
+  position: relative;
+  font-size: 32px;
+}
+.h4-underine::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  width: 120px;
+  height: 3px;
+  top: 40px;
+  left: 0;
+}
+.blog-single {
+  background-color: #ffffff;
+}
+/* end blog-single */
+.contact h3 {
+  position: relative;
+}
+.contact h3::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  width: 120px;
+  height: 3px;
+  top: 40px;
+  left: 0;
+}
+/* start footer  */
+footer {
+  background-color: #0062d3;
+  z-index: 2;
+}
+
+/* end footer  */
